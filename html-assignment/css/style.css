@@ -10,7 +10,7 @@ h1, .site-title {
     font-family: Coolvetica, Arial, sans-serif;
 }
 
-h2, p {
+h2, .about-me, .about-me-2 {
     background-color: lightgrey;
 }
 
@@ -19,5 +19,31 @@ ul {
 }
 
 .my-image {
-    box-shadow: 0px 1px 0px 2px black;
+    box-shadow: 0px 0px 1px 2px black;
+}
+
+.hobby-list li:nth-child(odd) {
+    background-color: lightblue;
+}
+
+/* LVHA (Link, Visited, Hover, Active) Must be in this order */
+a:visited {
+    text-decoration: underline;
+    color: #990000;
+}
+
+a {
+    font-weight: bold;
+    transition: 1s;
+}
+
+/* removes underline on hover */
+a:hover {
+    text-decoration: none;
+    color: rgba(0, 255, 0, 1);
+}
+
+/* changes color of link when clicked */
+a:active {
+    color: blue;
 }
