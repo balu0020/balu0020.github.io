@@ -11,20 +11,22 @@
         <header>
             <img src="images/lone-starfish-wide.jpg" alt="Lone Starfish" width="300">
             <h1>Lone Starfish</h1>
-        <!-- navigation bar with buttons for home, about, and contact pages -->
+        <!-- navigation bar with buttons for home, story, and contact pages -->
             <nav>
-                <button><a href="index.html">Home</a></button>
-                <button><a href="about.html">About</a></button>
-                <button><a href="contact.html">Contact</a></button>
+                <a href="#home">Home</a>
+                <a href="#story">Story</a>
+                <a href="#contact">Contact</a>
             </nav>
         </header>
         <!-- nav in a line -->
         <!-- article of text with image in line -->
-         <article>
-            <h2>Life of a Starfish</h2>
+         <article id="home">
+            <!-- Article explaining the life of a starfish -->
+            <h2 id="Story">Life of a Starfish</h2>
             <img src="images/lone-starfish.jpg" alt="Lone Starfish" width="300">
                 <p>The Lone Starfish is a unique species of starfish that can be found in the coastal waters of the Pacific Ocean. It is known for its vibrant colors and distinctive shape, which sets it apart from other starfish species. The Lone Starfish plays an important role in the marine ecosystem, as it helps to maintain the balance of the ocean floor by feeding on algae and other small organisms.</p>
                 <p>In addition to its ecological significance, the Lone Starfish is also a popular subject of study for marine biologists and researchers. Its ability to regenerate lost limbs and adapt to changing environmental conditions makes it a fascinating creature to observe and learn about. Conservation efforts are underway to protect the habitats of the Lone Starfish and ensure that this remarkable species continues to thrive in the wild.</p>
+            <!-- list showing some fun facts about a starfish -->
             <h3>Facts About Starfish</h3>
             <ul>
                 <li>Starfish can regenerate lost arms.</li>
@@ -32,6 +34,33 @@
                 <li>Starfish are found in oceans all over the world.</li>
                 <li>They can have varying numbers of arms, typically five.</li>
                 <li>Starfish are important for maintaining the balance of marine ecosystems.</li>
+            </ul>
+            <!-- forms and labels where you can inquire more about starfish -->
+            <h3>Contact for more information</h3>
+            <form action="index.html" method="post">
+            <div>
+                <label for="fullname">Your Name</label>
+                <input id="fullname" type="text">
+            </div>
+            <div>
+                <label for="email">Your Email</label>
+                <input id="email" type="text">
+            </div>
+            <div>
+                <label for="message">Your Message</label>
+                <textarea id="message"></textarea>
+            </div>
+            <div>
+                <label for="visit" id="contact">Would you like to visit the starfish?</label>
+                <input type="radio" name="visit" value="yes">Yes
+                <input type="radio" name="visit" value="no">No
+                <input type="radio" name="visit" value="maybe">Maybe
+            </div>
+            <div>
+                <label for="send">Send</label>
+                <input type="submit" id="send">
+            </div>
+            </form>
          </article>
     </div>
 </body>
