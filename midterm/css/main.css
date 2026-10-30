@@ -1,0 +1,109 @@
+/* every html tag follows this star */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(74, 136, 251);
+}
+
+.wrapper {
+    width: 800px;
+    background-color: rgb(0, 191, 255);
+    /* center block element */
+    margin: 0 auto;
+}
+
+/* change the background color of the first and second article elements inside main to different colours respectively */
+.left {
+    background-color: whitesmoke;
+}
+
+.right {
+    background-color: lightgray;
+}
+
+/* Block or inline */
+/* Top, Right, Bottom, Left */
+/* for any article element inside main, set the width to 400px and display to left */
+/* adds up to 450 added with the padding and border */
+main article {
+    width: 400px;
+    float: left;
+    padding: 20px;
+    border: 5px solid darkslateblue;
+    /* margin: 20px; */
+    box-sizing: border-box;
+}
+
+/* change block level property */
+nav ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+/* must change to inline-block for buttons */
+/* usually change text the link */
+nav li {
+    display: inline-block;
+    width: 260px;
+    font-size: 1.5rem;
+    text-align: center;
+    border-right: 1px solid black;
+    padding: 1rem;
+}
+
+/* depending on which side the line is on, you might need to change last-child to first-child */
+nav li:last-child {
+    border-right: none;
+}
+
+.picture {
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    /* wraps text around the image */
+    float: left;
+    margin-right: 1rem;
+}
+
+section {
+    background-color: red;
+    /* clear: both; */
+}
+
+/* adds content before or after the tags */
+aside::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.stage {
+    top: -50px;
+    /* width is 800px */
+    width: 100%;
+    height: 300px;
+    background-color: turquoise;
+}
+
+.prop {
+    width: 50px;
+    height: 50px;
+    background-color: cadetblue;
+    /* position properties */
+    position: relative;
+    left: 0;
+    top: -25px;
+}
+
+/* overflow */
+.scroll {
+    height: 300px;
+    overflow: scroll;
+}
