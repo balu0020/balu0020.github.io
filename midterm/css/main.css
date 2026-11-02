@@ -1,4 +1,4 @@
-/* Main css that creates the layout */
+/* Main css that creates the layout with a fixed width */
 * {
     box-sizing: border-box;
 }
@@ -7,11 +7,13 @@ html {
     font-size: 18px;
 }
 
+/* Styles for the body of the page */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(74, 136, 251);
 }
 
+/* Creates a blue border background for all the content in the page and centers it on the page */
 .wrapper {
     width: 1000px;
     background-color: rgb(0, 191, 255);
@@ -42,18 +44,38 @@ nav a:last-child {
     border-right: none;
 }
 
-/* Puts the heading in the center of the image and makes it white */
-.site-header h1 {
+.story-header {
+    font-size: 1.45rem;
+}
+
+/* Puts the heading in the center of the image and makes the font colour white */
+.centered {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    text-align: center;
+    font-size: 3.5rem;
 }
 
 /* Wraps text around the image on the left using the float property*/
 .picture {
     float: left;
     margin-right: 1rem;
+}
+
+/* Keeps the facts header from touching the border of the background */
+.facts-header {
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+    padding: 1rem;
+}
+
+
+.contact-info {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 2px solid black;
+    right: 90%;
+    left: 90%;
 }
