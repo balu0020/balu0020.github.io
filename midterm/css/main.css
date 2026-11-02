@@ -1,4 +1,4 @@
-/* every html tag follows this star */
+/* Main css that creates the layout */
 * {
     box-sizing: border-box;
 }
@@ -25,4 +25,35 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
+}
+
+/* Navigation in the site for home, story, and contact */
+nav a {
+    display: inline-block;
+    width: 325px;
+    font-size: 1.5rem;
+    text-align: center;
+    border-right: 1px solid black;
+    padding: 0.5rem;
+}
+
+/* Removes the right border from the last navigation link */
+nav a:last-child {
+    border-right: none;
+}
+
+/* Puts the heading in the center of the image and makes it white */
+.site-header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+/* Wraps text around the image on the left using the float property*/
+.picture {
+    float: left;
+    margin-right: 1rem;
 }
