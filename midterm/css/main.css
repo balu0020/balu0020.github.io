@@ -46,7 +46,7 @@ nav a:last-child {
 
 /* Simple font resizing for the story header */
 .story-header {
-    font-size: 1.45rem;
+    font-size: 1.05rem;
 }
 
 /* Puts the heading in the center of the image and makes the font colour white */
@@ -70,7 +70,7 @@ nav a:last-child {
     margin-top: -2rem;
     margin-bottom: -2.5rem;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.15rem;
 }
 
 /* Keeps the contact header from touching the border of the background */
@@ -112,6 +112,12 @@ The display is set to flex and the flex-direction is set to column so that the l
 }
 
 .visit-starfish {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+/* puts the radio buttons under the "Would you like to visit the starfish?" label in a row instead of a column and adds some margin to the bottom of the radio buttons so they aren't touching the next element. */
+.visit-options {
     display: flex;
     flex-direction: row;
     margin-bottom: 1rem;
