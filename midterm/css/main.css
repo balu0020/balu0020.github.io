@@ -111,16 +111,12 @@ The display is set to flex and the flex-direction is set to column so that the l
     margin-bottom: 1rem;
 }
 
-.visit-starfish {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 1rem;
-}
 /* puts the radio buttons under the "Would you like to visit the starfish?" label in a row instead of a column and adds some margin to the bottom of the radio buttons so they aren't touching the next element. */
 .visit-options {
     display: flex;
-    flex-direction: row;
+    margin-top: 1rem;
     margin-bottom: 1rem;
+    gap: 1rem;
 }
 
 /* Stylizes the submit button instead of having a basic html button */
