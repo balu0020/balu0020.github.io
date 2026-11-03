@@ -30,7 +30,7 @@
                 <div class="picture">
                     <img src="images/lone-starfish.jpg" alt="Lone Starfish" width="300">
                 </div>
-                <div class="story">
+                <div class="story" id="story">
                     <p>The Lone Starfish is a unique species of starfish that can be found in the coastal waters of the Pacific Ocean. It is known for its vibrant colors and distinctive shape, which sets it apart from other starfish species. The Lone Starfish plays an important role in the marine ecosystem, as it helps to maintain the balance of the ocean floor by feeding on algae and other small organisms.</p>
                     <p>In addition to its ecological significance, the Lone Starfish is also a popular subject of study for marine biologists and researchers. Its ability to regenerate lost limbs and adapt to changing environmental conditions makes it a fascinating creature to observe and learn about. Conservation efforts are underway to protect the habitats of the Lone Starfish and ensure that this remarkable species continues to thrive in the wild.</p>
                     <p>The Lone Starfish is a remarkable creature that continues to fascinate scientists and nature lovers alike, captivating them with its unique characteristics and behaviors. Another interesting aspect of the Lone Starfish is its ability to live in various marine environments, from shallow coastal waters to deeper oceanic regions.</p>
@@ -50,31 +50,36 @@
                     <li>Starfish are important for maintaining the balance of marine ecosystems.</li>
                 </ul>
             <!-- forms and labels where you can inquire more about starfish or other information -->
-                <h3>Contact for more information</h3>
+                <div class="contact-header">
+                <h3>Contact to learn more</h3>
+                </div>
                 <div class="contact-info">
                     <form action="index.html" method="post">
-                    <div>
+            <!-- "Your name" section of the contact information -->
+                    <div class="your-name">
                         <label for="fullname">Your Name</label>
-                        <input id="fullname" type="text">
+                        <input id="fullname" type="text" required>
                     </div>
-                    <div>
+            <!-- "Your email" section of the contact information -->
+                    <div class="your-email">
                         <label for="email">Your Email</label>
-                        <input id="email" type="text">
+                        <input id="email" type="text" required>
                     </div>
-                    <div>
+            <!-- "Your message" section of the contact information -->
+                    <div class="your-message">
                         <label for="message">Your Message</label>
-                        <textarea id="message"></textarea>
+                        <textarea id="message" required></textarea>
                     </div>
-                    <div>
+            <!-- "Would you like to visit the starfish?" section of the contact information that uses a radio button-->
+                    <div class="visit-starfish">
                         <label for="visit" id="contact">Would you like to visit the starfish?</label>
-                        <input type="radio" id="visit" name="visit_yes" value="yes">Yes
-                        <input type="radio" name="visit_no" value="no">No
-                        <input type="radio" name="visit_maybe" value="maybe">Maybe
+                        <div class="visit-options">
+                            <input type="radio" id="visit" name="visit_yes" value="yes">Yes
+                            <input type="radio" name="visit_no" value="no">No
+                            <input type="radio" name="visit_maybe" value="maybe">Maybe
+                        </div>
                     </div>
-                    <div class="submit-button">
-                        <label for="send">Send</label>
-                        <input type="submit" id="send">
-                    </div>
+                        <button type="reset" class="submit-button">SEND</button>
                     </form>
                 </div>
             </article>
